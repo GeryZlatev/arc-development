@@ -71,11 +71,11 @@ export default function Header(props) {
                         className={classes.tabContainer}
                         indicatorColor="primary"
                         >
-                            <Tab className={ classes.tab} component={Link} to="/"label="Home"/>
-                            <Tab className={ classes.tab} component={Link} to="/services"label="Services"/>
-                            <Tab className={ classes.tab} component={Link} to="/revolution"label="The Revolution"/>
-                            <Tab className={ classes.tab} component={Link} to="/about"label="About Us"/>
-                            <Tab className={ classes.tab} component={Link} to="/contact"label="Contact Us"/>
+                            <Tab className={ classes.tab} component={Link} label="Home"/>
+                            <Tab className={ classes.tab} component={Link} label="Services"/>
+                            <Tab className={ classes.tab} component={Link} label="The Revolution"/>
+                            <Tab className={ classes.tab} component={Link} label="About Us"/>
+                            <Tab className={ classes.tab} component={Link} label="Contact Us"/>
                         </Tabs>
                         <Button variant="contained" color="secondary" className={classes.button}>
                             Free Estimate
