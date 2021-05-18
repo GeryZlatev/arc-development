@@ -32,10 +32,7 @@ const useStyles = makeStyles(theme => ({
         height: "8em"
     },
     logoContainer: {
-        padding: 0,
-        "&:hover": {
-            backgroundColor: "transperent"
-        }
+        padding:0
     },
     tabContainer: {
         marginLeft: "auto"

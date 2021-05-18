@@ -32,10 +32,7 @@ const useStyles = makeStyles(theme => ({
         height: "8em"
     },
     logoContainer: {
-        padding: 0,
-        "&:hover": {
-            backgroundColor: "transperent"
-        }
+        padding:0
     },
     tabContainer: {
         marginLeft: "auto"
@@ -87,8 +84,7 @@ export default function Header(props) {
                         component={Link} 
                         to="/" 
                         className={classes.logoContainer}
-                        disableRipple    
-                        onClick={() => setValue(0)}
+                        onClick=(() => {setValue(0)})
                         >
                             <img 
                             src={logo} 

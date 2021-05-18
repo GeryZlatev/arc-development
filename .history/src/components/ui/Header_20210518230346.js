@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     logoContainer: {
         padding: 0,
         "&:hover": {
-            backgroundColor: "transperent"
+            backgroundColor: "tra"
         }
     },
     tabContainer: {
