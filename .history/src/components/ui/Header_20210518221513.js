@@ -39,12 +39,10 @@ const useStyles = makeStyles(theme => ({
         marginLeft: "25px"
     },
     button: {
-        ...theme.typography.estimate,
         borderRadius: "50px",
         marginLeft: "50px",
         marginRight: "25px",
-        height: "45px",
-        
+        fontFamily: "Pacifico"
     }
 }))
 

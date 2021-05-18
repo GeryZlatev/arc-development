@@ -37,14 +37,6 @@ const useStyles = makeStyles(theme => ({
         ...theme.typography.tab,
         minWidth: 10,
         marginLeft: "25px"
-    },
-    button: {
-        ...theme.typography.estimate,
-        borderRadius: "50px",
-        marginLeft: "50px",
-        marginRight: "25px",
-        height: "45px",
-        
     }
 }))
 
@@ -66,7 +58,7 @@ export default function Header(props) {
                             <Tab className={ classes.tab} label="About Us"/>
                             <Tab className={ classes.tab} label="Contact Us"/>
                         </Tabs>
-                        <Button variant="contained" color="secondary" className={classes.button}>
+                        <Button variant={contained}>
                             Free Estimate
                         </Button>
             </Toolbar>
