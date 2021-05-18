@@ -31,11 +31,6 @@ const useStyles = makeStyles(theme => ({
     },
     tabContainer: {
         marginLeft: "auto"
-    },
-    tab: {
-        ...theme.typography.tab,
-        minWidth: 10,
-        marginLeft: "25px"
     }
 }))
 

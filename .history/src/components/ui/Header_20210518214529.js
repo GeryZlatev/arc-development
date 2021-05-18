@@ -33,9 +33,7 @@ const useStyles = makeStyles(theme => ({
         marginLeft: "auto"
     },
     tab: {
-        ...theme.typography.tab,
-        minWidth: 10,
-        marginLeft: "25px"
+        fontFamily: "Raleway"
     }
 }))
 
