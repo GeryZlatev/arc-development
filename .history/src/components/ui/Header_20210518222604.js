@@ -54,22 +54,13 @@ export default function Header(props) {
 
     const classes = useStyles();
 
-    const handleChange = (e, value) => {
-        setValue(value)
-    }
-
     return (
         <>
         <ElevationScroll>
             <AppBar position="fixed">
             <Toolbar disableGutters>
                         <img src={logo} className={classes.logo} alt="company logo" />
-                        <Tabs 
-                        value={value} 
-                        onChange={handleChange} 
-                        className={classes.tabContainer}
-                        indicatorColor="primary"
-                        >
+                        <Tabs value={value} className={classes.tabContainer}>
                             <Tab className={ classes.tab} label="Home"/>
                             <Tab className={ classes.tab} label="Services"/>
                             <Tab className={ classes.tab} label="The Revolution"/>
