@@ -156,9 +156,7 @@ export default function Header(props) {
                             id="simple-menu"
                             anchorEl={anchorEl}
                             open={open}
-                            onClose={handleClose}
-                            MenuListProps={{onMouseLeave: handleClose}}
-                        >
+                            onClose={handleClose}>
                             <MenuItem
                                 onClick={handleClose}
                             >

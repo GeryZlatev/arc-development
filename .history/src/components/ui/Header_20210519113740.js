@@ -127,7 +127,7 @@ export default function Header(props) {
                             aria-haspopup={anchorEl ? "true" : undefined}    
                             className={ classes.tab} 
                             component={Link}
-                            onMouseOver={(e) => handleClick(e)}    
+                            onClick={(e) => handleClick(e)}    
                             to="/services"
                             label="Services"/>
                             <Tab 
@@ -156,9 +156,7 @@ export default function Header(props) {
                             id="simple-menu"
                             anchorEl={anchorEl}
                             open={open}
-                            onClose={handleClose}
-                            MenuListProps={{onMouseLeave: handleClose}}
-                        >
+                            onClose={handleClose}>
                             <MenuItem
                                 onClick={handleClose}
                             >
