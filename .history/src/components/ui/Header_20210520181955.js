@@ -30,22 +30,10 @@ return React.cloneElement(children, {
 const useStyles = makeStyles(theme => ({
     toolbarMargin: {
         ...theme.mixins.toolbar,
-        marginBottom: "3em",
-        [theme.breakpoints.down("md")]: {
-            marginBottom: "2em"
-        },
-        [theme.breakpoints.down("xs")]: {
-            marginBottom: "1.25em"
-        }
+        marginBottom: "3em"
     },
     logo: {
-        height: "8em",
-        [theme.breakpoints.down("md")]: {
-            height: "7em"
-        },
-        [theme.breakpoints.down("xs")]: {
-            height: "5.5em"
-        }
+        height: "8em"
     },
     logoContainer: {
         padding: 0,
