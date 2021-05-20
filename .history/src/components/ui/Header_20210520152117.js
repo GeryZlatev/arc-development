@@ -113,12 +113,6 @@ export default function Header(props) {
         setOpen(false);
     }
 
-    const onClickMenuItemHandler = (event, index) => {
-        setAnchorEl(null);
-        setOpen(false);
-        setSelectedIndex(index)
-    }
-
     return (
         <>
         <ElevationScroll>
@@ -187,18 +181,38 @@ export default function Header(props) {
                             classes={{ paper: classes.menu }}
                             elevation={0}
                         >
-                            {options.map((option, i) => (
-                                <MenuItem
-                                    key={option.link}
-                                    component={Link}
-                                    to={option.link}
-                                    onClick={(event) => { onClickMenuItemHandler(event, i); setValue(1); handleClose() }}
-                                    classes={{root: classes.menuItem}}
-                                    selected={selectedIndex === i && value === 1}
-                                >
-                                    {option.name}
-                                </MenuItem>
-                            ))}
+                            <MenuItem
+                                onClick={() => { handleClose(); setValue(1)}}
+                                component={Link}
+                                to="/services"
+                                classes={{root: classes.menuItem}}
+                            >
+                                Services
+                            </MenuItem>
+                            <MenuItem
+                                onClick={() => { handleClose(); setValue(1)}}
+                                component={Link}
+                                to="/customsoftware"
+                                classes={{root: classes.menuItem}}
+                            >
+                                Custom Software Development
+                            </MenuItem>
+                            <MenuItem
+                                onClick={() => { handleClose(); setValue(1)}}
+                                component={Link}
+                                to="/mobileapps"
+                                classes={{root: classes.menuItem}}
+                            >
+                                Mobile App Development
+                            </MenuItem>
+                            <MenuItem
+                                onClick={() => { handleClose(); setValue(1)}}
+                                component={Link}
+                                to="/websites"
+                                classes={{root: classes.menuItem}}
+                            >
+                                Website Development
+                            </MenuItem>
                         </Menu>
             </Toolbar>
         </AppBar>

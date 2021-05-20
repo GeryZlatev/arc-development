@@ -113,12 +113,6 @@ export default function Header(props) {
         setOpen(false);
     }
 
-    const onClickMenuItemHandler = (event, index) => {
-        setAnchorEl(null);
-        setOpen(false);
-        setSelectedIndex(index)
-    }
-
     return (
         <>
         <ElevationScroll>
@@ -189,12 +183,7 @@ export default function Header(props) {
                         >
                             {options.map((option, i) => (
                                 <MenuItem
-                                    key={option.link}
-                                    component={Link}
-                                    to={option.link}
-                                    onClick={(event) => { onClickMenuItemHandler(event, i); setValue(1); handleClose() }}
-                                    classes={{root: classes.menuItem}}
-                                    selected={selectedIndex === i && value === 1}
+                                
                                 >
                                     {option.name}
                                 </MenuItem>
